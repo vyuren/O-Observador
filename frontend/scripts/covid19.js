@@ -11,7 +11,7 @@ themechanger.addEventListener("click", function () {
 
     if (isDarkMode == true) {
 
-        themechanger.src = "assets/darkmode.webp";
+        themechanger.src = "../assets/darkmode.webp";
         body.style.backgroundColor = "rgb(26, 26, 26)";
         board.style.backgroundColor = "rgb(48, 48, 48)";
 
@@ -30,7 +30,7 @@ themechanger.addEventListener("click", function () {
 
     } else {
 
-        themechanger.src = "assets/lightmode.webp";
+        themechanger.src = "../assets/lightmode.webp";
         body.style.backgroundColor = "white";
         board.style.backgroundColor = "rgb(224, 224, 224)";
 
