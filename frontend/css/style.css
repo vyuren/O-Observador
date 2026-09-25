@@ -2,6 +2,8 @@ body {
 
     min-height: 3000px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #taskbar {
@@ -186,4 +188,89 @@ body {
     height: 100%;
 
     transition: transform 0.5s ease;
+}
+
+#lowboard {
+
+    background: rgb(224, 224, 224);
+    border-radius: 25px;
+
+    width: 1000px;
+    height: 2000px;
+
+    margin: 80px auto;
+
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticiamenor {
+
+    background: white;
+    border-radius: 25px;
+
+    width: 950px;
+    height: 350px;
+
+    margin: 25px;
+    text-align: right;
+    align-items:center;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+
+    cursor: pointer;
+
+    transition: box-shadow 0.2s;
+}
+
+.noticiamenor:hover{
+
+    box-shadow: 5px 5px 0px rgba(128, 128, 128, 0.205);
+}
+
+.noticiamenor:hover .noticiatextomenor {
+
+    transition: 0.1s;
+    color:brown;
+}
+
+.noticiatextomenor {
+
+    color: rgb(187, 46, 46);
+
+    font-weight: bold;
+    font-size: 25px;
+
+    margin: 30px;
+
+    position: relative;
+    bottom: 20%
+}
+
+.noticiaimagemmenor {
+
+    position: relative;
+    left: 0%;
+
+    border-radius: 25px;
+    margin: 20px;
+
+    width: 300px;
+    height: 300px;
+}
+
+.temamenor {
+
+    font-weight: bold;
+    color: rgb(187, 46, 46);
+
+    position: relative;
+    bottom: 30%;
+    right: 16.5%;
 }
