@@ -2,7 +2,7 @@ const themechanger = document.getElementById("themechanger");
 const body = document.body;
 const board = document.getElementById("board");
 const p = document.querySelectorAll("p");
-const noticia = document.querySelectorAll(".noticia")
+const titulo = document.querySelector(".titulo")
 let isDarkMode = false;
 
 themechanger.addEventListener("click", function () {
@@ -20,11 +20,7 @@ themechanger.addEventListener("click", function () {
             p.style.color = "rgb(255, 255, 255)";
         })
 
-        noticia.forEach(function(noticia){
-
-            noticia.style.backgroundColor = "rgb(26, 26, 26)";
-        })
-            
+        titulo.style.color = "white";  
         
         
 
@@ -39,11 +35,7 @@ themechanger.addEventListener("click", function () {
             p.style.color = "black";
         })
 
-        noticia.forEach(function(noticia){
-
-            noticia.style.backgroundColor = "white";
-        })
-            
+        titulo.style.color = "black";
         
     }
 })
