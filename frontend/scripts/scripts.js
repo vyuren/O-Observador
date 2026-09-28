@@ -3,6 +3,9 @@ const body = document.body;
 const board = document.getElementById("board");
 const p = document.querySelectorAll("p");
 const noticia = document.querySelectorAll(".noticia")
+
+const lowboard = document.getElementById("lowboard");
+const noticiamenor = document.querySelectorAll(".noticiamenor");
 let isDarkMode = false;
 
 themechanger.addEventListener("click", function () {
@@ -14,6 +17,13 @@ themechanger.addEventListener("click", function () {
         themechanger.src = "assets/darkmode.webp";
         body.style.backgroundColor = "rgb(26, 26, 26)";
         board.style.backgroundColor = "rgb(48, 48, 48)";
+
+        lowboard.style.backgroundColor = "rgb(48, 48, 48)";
+   
+        noticiamenor.forEach(function(noticiamenor){
+
+            noticiamenor.style.backgroundColor = "rgb(26, 26, 26)";
+        })
 
         p.forEach(function(p){
 
@@ -34,6 +44,8 @@ themechanger.addEventListener("click", function () {
         body.style.backgroundColor = "white";
         board.style.backgroundColor = "rgb(224, 224, 224)";
 
+        lowboard.style.backgroundColor = "rgb(224, 224, 224)";
+
         p.forEach(function(p){
 
             p.style.color = "black";
@@ -44,6 +56,10 @@ themechanger.addEventListener("click", function () {
             noticia.style.backgroundColor = "white";
         })
             
+        noticiamenor.forEach(function(noticiamenor){
+
+            noticiamenor.style.backgroundColor = "white";
+        })
         
     }
 })

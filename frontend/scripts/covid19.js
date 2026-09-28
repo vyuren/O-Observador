@@ -2,7 +2,11 @@ const themechanger = document.getElementById("themechanger");
 const body = document.body;
 const board = document.getElementById("board");
 const p = document.querySelectorAll("p");
+
+
 const titulo = document.querySelector(".titulo")
+const autor = document.querySelector(".autor")
+const data = document.querySelector(".data")
 let isDarkMode = false;
 
 themechanger.addEventListener("click", function () {
@@ -21,6 +25,8 @@ themechanger.addEventListener("click", function () {
         })
 
         titulo.style.color = "white";  
+        autor.style.color = "white";
+        data.style.color = "white";
         
         
 
@@ -36,6 +42,8 @@ themechanger.addEventListener("click", function () {
         })
 
         titulo.style.color = "black";
+        autor.style.color = "black";
+        data.style.color = "black";
         
     }
 })

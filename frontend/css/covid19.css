@@ -121,6 +121,24 @@ body {
     top:15%;
 }
 
+.autor {
+
+    font-size: 20px;
+    font-weight: bolder;
+
+    position:absolute;
+    top: 20%;
+}
+
+.data {
+
+    font-size: 16px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 23%;
+}
+
 .redacao {
 
     position: relative;
